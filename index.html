@@ -1,0 +1,230 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="logo-container">
+        <img src="Images/KJDesign Logo-HorizontalOrange.png" alt="Your Logo" class="center">
+    </div>
+
+    <!-- Side images -->
+    <div class="side-images">
+        <img src="Images/KelseyJoDesign-GreenSide-01.png" alt="Image 1" id="left-image">
+        <img src="Images/KelseyJoDesign-OrangeSide-01.png" alt="Image 2" id="right-image">
+    </div>
+
+    <div class="content-container">
+        <div class="scroll-container container-width">
+            <img src="Images/Flow/UIUXWeb-WebImagesFlow-01.jpg" alt="Image 1" class="center">
+            <img src="Images/Flow/UIUXWeb-WebImagesFlow-02.jpg" alt="Image 1" class="center">
+            <img src="Images/Flow/UIUXWeb-WebImagesFlow-03.jpg" alt="Image 1" class="center">
+            <img src="Images/Flow/UIUXWeb-WebImagesFlow-04.jpg" alt="Image 1" class="center">
+            <img src="Images/Flow/UIUXWeb-WebImagesFlow-05.jpg" alt="Image 1" class="center">
+            <img src="Images/Flow/UIUXWeb-WebImagesFlow-06.jpg" alt="Image 1" class="center">
+            <img src="Images/Flow/UIUXWeb-WebImagesFlow-07.jpg" alt="Image 1" class="center">
+            <img src="Images/Flow/UIUXWeb-WebImagesFlow-08.jpg" alt="Image 1" class="center">
+            <img src="Images/Flow/UIUXWeb-WebImagesFlow-09.jpg" alt="Image 1" class="center">
+            <img src="Images/Flow/UIUXWeb-WebImagesFlow-10.jpg" alt="Image 1" class="center">
+            <img src="Images/Flow/UIUXWeb-WebImagesFlow-11.jpg" alt="Image 1" class="center">
+            <img src="Images/Flow/UIUXWeb-WebImagesFlow-12.jpg" alt="Image 1" class="center">
+            <img src="Images/Flow/UIUXWeb-WebImagesFlow-13.jpg" alt="Image 1" class="center">
+            <img src="Images/Flow/UIUXWeb-WebImagesFlow-14.jpg" alt="Image 1" class="center">
+            <img src="Images/Flow/UIUXWeb-WebImagesFlow-15.jpg" alt="Image 1" class="center">
+            <img src="Images/Flow/UIUXWeb-WebImagesFlow-16.jpg" alt="Image 1" class="center">
+            <img src="Images/Flow/UIUXWeb-WebImagesFlow-17.jpg" alt="Image 1" class="center">
+            <img src="Images/Flow/UIUXWeb-WebImagesFlow-18.jpg" alt="Image 1" class="center">
+            <img src="Images/Flow/UIUXWeb-WebImagesFlow-19.jpg" alt="Image 1" class="center">
+            <img src="Images/Flow/UIUXWeb-WebImagesFlow-20.jpg" alt="Image 1" class="center">
+            <img src="Images/Flow/UIUXWeb-WebImagesFlow-21.jpg" alt="Image 1" class="center">
+            <img src="Images/Flow/UIUXWeb-WebImagesFlow-22.jpg" alt="Image 1" class="center">
+            <img src="Images/Flow/UIUXWeb-WebImagesFlow-23.jpg" alt="Image 1" class="center">
+            <img src="Images/Flow/UIUXWeb-WebImagesFlow-24.jpg" alt="Image 1" class="center">
+            <img src="Images/Flow/UIUXWeb-WebImagesFlow-25.jpg" alt="Image 1" class="center">
+            <img src="Images/Flow/UIUXWeb-WebImagesFlow-26.jpg" alt="Image 1" class="center">
+            <img src="Images/Flow/UIUXWeb-WebImagesFlow-27.jpg" alt="Image 1" class="center">
+            <img src="Images/Flow/UIUXWeb-WebImagesFlow-28.jpg" alt="Image 1" class="center">
+        </div>
+    </div>
+
+    <div class="YarnBall-container container-width">
+        <img src="Images/YarnballAssets-Thumbnail.jpg" alt="YarnBall Thumbnail">
+        <div class="github-button-container">
+            <a href="https://github.com/KelseyJoDesign/UIUX-Portfolio-Site.git" target="_blank" class="button-link">
+                <button type="button">Play YarnBall</button>
+            </a>
+        </div>
+    </div>
+
+</body>
+</html>
+
+----------------------------------------------------------------------------------------------
+# START CSS
+----------------------------------------------------------------------------------------------
+
+<style>
+body {
+    @font-face {
+    font-family: 'Kodchasan';
+    src: url('Kodchasan-Regular.woff2') format('woff2'),
+         url('Kodchasan-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    }
+
+    background-color: rgb(21, 36, 41);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+    position: relative;
+}
+
+.logo-container {
+    background-color: rgb(253, 243, 224);
+    width: 100%;
+    height: 10vh;
+    min-height: 140px;
+    padding: 20px 0;
+    text-align: center;
+    z-index: 10;
+}
+
+.logo-container img {
+    max-width: 12%; /* 60% of the original 20% */
+    margin-top: -20px;
+    height: auto; /* Maintains the aspect ratio */
+}
+
+.container-width {
+    width: 45vw; 
+    stroke: rgb(253, 243, 224);/* Consistent width for both containers */
+    stroke-width: 2px;
+}
+
+.scroll-container {
+    background-color: rgb(41, 48, 51);
+    overflow-y: auto; // Ensure it's always scrollable
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    max-height: 60vh; // Reduce height to allow more flexible scrolling interaction
+    padding: 20px 0; // Reduce padding to increase space for images
+    margin-top: 60px;
+    z-index: 5;
+    box-sizing: border-box;
+}
+
+.scroll-container img {
+    width: 100%;
+    object-fit: contain; // This ensures images are fully visible
+    display: block;
+}
+
+
+
+.YarnBall-container {
+    background-color: rgb(21, 36, 41);
+    padding: 60px 0;
+    display: flex;
+    margin-top: 80px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    z-index: 5;
+    box-sizing: border-box;
+}
+
+.YarnBall-container img {
+    max-width: 100%;
+    height: auto;
+}
+
+.button-link button {
+    font-family: 'Kodchasan', sans-serif;
+    padding: 45px 90px; /* Increased padding */
+    margin-top: 60px;
+    font-size: 36px; /* Larger font size */
+    background-color: rgb(253, 243, 224); /* Example button color */
+    color: rgb(21, 36, 41); /* Text color */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.button-link button:hover {
+    background-color: rgb(209, 129, 66); /* Darker shade on hover */
+}
+
+
+.side-images {
+    position: fixed;
+    top: 37%;
+    left: 0;
+    right: 0;
+    z-index: 1;
+}
+
+#left-image, #right-image {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    height: 130vh; /* Adjusted for combined height of both containers */
+}
+
+#left-image {
+    left: -3%;
+    width: auto;
+}
+
+#right-image {
+    right: 0;
+    width: auto;
+}
+
+</style>
+
+----------------------------------------------------------------------------------------------
+# START SCRIPT
+----------------------------------------------------------------------------------------------
+
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+        const scrollContainer = document.querySelector('.scroll-container');
+    
+        function startAutoScroll() {
+            if (scrollContainer.scrollTop + scrollContainer.clientHeight >= scrollContainer.scrollHeight) {
+                scrollContainer.scrollTop = 0; // Reset to the top only if at the bottom
+            } else {
+                scrollContainer.scrollTop += 2; // Incremental scroll
+            }
+        }
+    
+        let autoScroll = setInterval(startAutoScroll, 50);
+    
+        scrollContainer.addEventListener('mouseenter', () => {
+            clearInterval(autoScroll);
+            scrollContainer.style.overflowY = 'auto';
+        });
+    
+        scrollContainer.addEventListener('mouseleave', () => {
+            scrollContainer.style.overflowY = 'hidden';
+            autoScroll = setInterval(startAutoScroll, 50);
+        });
+    });
+    </script>
+    
+    
